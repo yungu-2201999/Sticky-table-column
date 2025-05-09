@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Table Column</title>
+    <style>
+        .sticky-table-headers__sticky {
+            /* Background color */
+            background-color: #9ca3af;
+
+            /* Stick to the left */
+            left: 0;
+            position: sticky;
+
+            /* Displayed on top of other rows when scrolling */
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="sticky-table-column">
+        <thead>
+            <tr>
+                <th class="sticky-table-column__sticky">...</th>
+                <th class="sticky-table-column__sticky">...</th>
+                <th class="sticky-table-column__sticky">...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="sticky-table-column__sticky">...</td>
+                <td class="sticky-table-column__sticky">..........</td>
+                <td class="sticky-table-column__sticky">...</td>
+                <td class="sticky-table-column__sticky">...</td>
+                <!-- Other columns ... -->
+            </tr>
+            <tr>
+                <td class="sticky-table-column__sticky">...</td>
+                <td class="sticky-table-column__sticky">...</td>
+                <td class="sticky-table-column__sticky">...</td>
+                <td class="sticky-table-column__sticky">...</td>
+                <!-- Other columns ... -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
